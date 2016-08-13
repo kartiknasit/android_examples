@@ -32,10 +32,9 @@
         android:layout_height="wrap_content"
         android:text="XML Button"
         android:id="@+id/bt_xml1"
-        android:layout_marginTop="39dp"
-        android:layout_below="@+id/bt_anonymous"
-        android:layout_centerHorizontal="true"
-        android:onClick="onClickForXMLButton"/>
+        android:onClick="onClickForXMLButton"
+        android:layout_above="@+id/textView"
+        android:layout_alignEnd="@+id/bt_interface_method1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,5 +43,21 @@
         android:text="Empty"
         android:id="@+id/textView"
         android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/bt_xml1" />
+        android:layout_alignEnd="@+id/bt_interface_method1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Interface Button"
+        android:id="@+id/bt_interface_method2"
+        android:layout_below="@+id/bt_anonymous"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second XML Button"
+        android:id="@+id/bt_xml2"
+        android:layout_above="@+id/textView"
+        android:layout_toEndOf="@+id/bt_xml1" />
 </RelativeLayout>

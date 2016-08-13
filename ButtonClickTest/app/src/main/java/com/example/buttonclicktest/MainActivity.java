@@ -47,12 +47,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
+    // Now if we have multiple buttons registered to same class
+    // then we can differentiate by their ids
     @Override
     public void onClick(View view) {
-        textView.setText("Interface Method Button Clicked.");
+        if(view.getId() == R.id.bt_interface_method1) {
+            textView.setText("1st Interface Method Button Clicked.");
+        }
+        else if(view.getId() == R.id.bt_interface_method2) {
+            textView.setText("2nd Interface Method Button Clicked.");
+        }
     }
 
+    // Also if we have multiple buttons in Layout XML
+    // Which contains same Click Method then we can differentiate
+    // By their by ids as below
     public void onClickForXMLButton(View view) {
-        textView.setText("XML Button Called.");
+        if(view.getId() == R.id.bt_xml1) {
+            textView.setText("1st XML Button Called.");
+        }
+        else if(view.getId() == R.id.bt_xml2) {
+            textView.setText("2nd XML Button Called.");
+        }
     }
 }
