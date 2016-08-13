@@ -9,8 +9,40 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.buttonclicktest.MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interface Button"
+        android:id="@+id/bt_interface_method1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anonymous Button"
+        android:id="@+id/bt_anonymous"
+        android:layout_alignTop="@+id/bt_interface_method1"
+        android:layout_toEndOf="@+id/bt_interface_method1"
+        android:layout_marginStart="36dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XML Button"
+        android:id="@+id/bt_xml1"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/bt_anonymous"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickForXMLButton"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Empty"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/bt_xml1" />
 </RelativeLayout>
