@@ -1,0 +1,84 @@
+Testing of Activity LifeCycle
+
+Testing 1
+
+1.) Click on Application Icon
+MainActivity:onCreate
+MainActivity:onStart
+MainActivity:onResume
+
+2.) Open Second Activity by clicking on Button which opens using Intent Class (onClick() {Intent i = new Intent(this, SecondActivity.class); startActivity(i);}).
+MainActivity:onPause
+SecondActivity:onCreate
+SecondActivity:onStart
+SecondActivity:onResume
+MainActivity:onStop
+
+3.) Press Back Button which will move to Main Activity
+SecondActivity:onPause
+MainActivity:onRestart
+MainActivity:onStart
+MainActivity:onResume
+SecondActivity:onStop
+SecondActivity:onDestroy
+
+4.) Now we are in the Main Activity. Again Press Back Button which will Exit Application.
+MainActivity:onPause
+MainActivity:onStop
+MainActivity:onDestroy
+
+Testing 2
+
+1.) Click on Application Icon
+MainActivity:onCreate
+MainActivity:onStart
+MainActivity:onResume
+
+2.) Press Home Button
+MainActivity:onPause
+MainActivity:onStop
+
+3.) Again Click on Application Icon
+MainActivity:onRestart
+MainActivity:onStart
+MainActivity:onResume
+
+Testing 3
+
+1.) Click on Application Icon
+MainActivity:onCreate
+MainActivity:onStart
+MainActivity:onResume
+
+2.) Open Second Activity by clicking on Button which opens using Intent Class (onClick() {Intent i = new Intent(this, SecondActivity.class); startActivity(i);}).
+MainActivity:onPause
+SecondActivity:onCreate
+SecondActivity:onStart
+SecondActivity:onResume
+MainActivity:onStop
+
+3.) Press Home Button
+SecondActivity:onPause
+SecondActivity:onStop
+
+4.) Again Click on Application Icon
+SecondActivity:onRestart
+SecondActivity:onStart
+SecondActivity:onResume
+
+5.) Now Close the Application Using Application Switch Icon.
+SecondActivity:onPause
+SecondActivity:onStop
+MainActivity:onDestroy
+SecondActivity:onDestroy
+
+Testing 4
+1.) Click on Application Icon
+MainActivity:onCreate
+MainActivity:onStart
+MainActivity:onResume
+
+2.) Now Close the Application Using Application Switch Icon.
+MainActivity:onPause
+MainActivity:onStop
+MainActivity:onDestroy
