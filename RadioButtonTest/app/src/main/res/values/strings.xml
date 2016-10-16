@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RadioButtonTest</string>
+    <string name="how_our_app">How is our App?</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="average">Average</string>
+    <string name="which_mobile">Which company mobile do you own?</string>
+    <string name="apple">Apple</string>
+    <string name="samsung">Samsung</string>
+    <string name="lg">LG</string>
+    <string name="htc">HTC</string>
+</resources>

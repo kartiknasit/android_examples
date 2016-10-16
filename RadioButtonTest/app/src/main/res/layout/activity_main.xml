@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.kartik.sampleapps.radiobuttontest.MainActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="@string/how_our_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:text="@string/excellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/excellent_rb"
+            android:padding="10dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:text="@string/good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/good_rb"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:text="@string/average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/average_rb"
+            android:padding="10dp"/>
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup2"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="@string/which_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:text="@string/apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/apple_rb"
+            android:padding="10dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:text="@string/samsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/samsung_rb"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:text="@string/lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lg_rb"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:text="@string/htc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/htc_rb"
+            android:padding="10dp"/>
+    </RadioGroup>
+</LinearLayout>
