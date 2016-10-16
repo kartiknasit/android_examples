@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kartik.sampleapps.customradiobuttontest.MainActivity">
+
+    <TextView
+        android:text="How is your Life?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <RadioButton
+        android:text="Excellent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="19dp"
+        android:id="@+id/excellent_rb"
+        android:textSize="30sp"
+        android:checked="true"
+        android:textColor="@color/black"
+        android:button="@drawable/custom_radio_button"
+        android:padding="10dp"/>
+
+    <RadioButton
+        android:text="Good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/excellent_rb"
+        android:layout_alignStart="@+id/excellent_rb"
+        android:layout_marginTop="26dp"
+        android:id="@+id/good_rb"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:button="@drawable/custom_radio_button"
+        android:padding="10dp"/>
+
+    <RadioButton
+        android:text="Don't Ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/good_rb"
+        android:layout_alignStart="@+id/good_rb"
+        android:layout_marginTop="25dp"
+        android:id="@+id/dont_ask_rb"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:button="@drawable/custom_radio_button"
+        android:padding="10dp"/>
+</RelativeLayout>
