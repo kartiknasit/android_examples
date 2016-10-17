@@ -52,4 +52,40 @@
         android:layout_toEndOf="@+id/hi_cb"
         android:textColor="@color/black"/>
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hi_cb"
+        android:layout_alignStart="@+id/hi_cb"
+        android:layout_marginTop="19dp"
+        android:id="@+id/fine_cb"
+        android:button="@drawable/custom_checkbox_2"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fine_cb"
+        android:layout_alignStart="@+id/fine_cb"
+        android:layout_marginTop="19dp"
+        android:id="@+id/what_cb"
+        android:button="@drawable/custom_checkbox_2"/>
+
+    <TextView
+        android:text="Fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fine_cb"
+        android:layout_toEndOf="@+id/fine_cb"
+        android:id="@+id/fine_tv"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:text="What"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/what_cb"
+        android:layout_toEndOf="@+id/what_cb"
+        android:id="@+id/what_tv"
+        android:textColor="@color/black"/>
+
 </RelativeLayout>
